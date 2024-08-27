@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em JS</title>
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="cor">Calculadora</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <div class="conteudo">
+                <label for="valor1">Valor 1: </label>
+                <input type="text" name="valor1" id="valor1" required>
+                <label for="valor2">Valor 2: </label>
+                <input type="text" name="valor2" id="valor2" required>
+            </div>
+        </form>
+        <div class="operacoes">
+            <button class="mais" onclick="somar()">+</button>
+            <button class="menos" onclick="subtrair()">-</button>
+            <button class="multiplicar" onclick="multiplicar()">*</button>
+            <button class="dividir" onclick="dividir()">/</button>
+        </div>
+        <!-- <div class="botao">
+            <button type="submit">Calcular</button>
+            <button type="reset">Limpar</button>
+        </div> -->
+        <h1 class="result">O resultado é de: </h1>
+        <p id="resultado"></p>
+        <script src="js/calculadora.js"></script>
+    </main>
+</body>
+
+</html>

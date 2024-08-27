@@ -1,0 +1,127 @@
+body {
+    font-size: 30px;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+}
+
+input {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+
+label {
+    padding: 20px;
+}
+
+.operacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.mais,
+.menos,
+.multiplicar,
+.dividir {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.mais {
+    background-color: rgb(77, 149, 216);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menos {
+    background-color: rgb(224, 101, 138);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+}
+
+.multiplicar {
+    background-color: rgb(236, 226, 134);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+}
+
+.dividir {
+    background-color: rgb(85, 207, 166);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button[type='submit'],
+button[type='reset'] {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.result {
+    text-align: center;
+    font-size: 50px;
+}
+
+#resultado {
+    font-size: 40px;
+    text-align: center;
+}
+
+.cor,
+.result {
+    color: blue;
+    animation: animacao 4s infinite;
+}
+
+@keyframes animacao {
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: yellow;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+#resultado {
+    animation: res 4s infinite;
+}
+
+@keyframes res {
+    50% {
+        transform: scale(3);
+    }
+}
