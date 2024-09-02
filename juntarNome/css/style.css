@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+}
+
+#nomes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+#juntar {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(133, 202, 133);
+    font-size: 15px;
+}
+
+#escrever {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(100, 238, 141);
+    font-size: 15px;
+}
+
+#limpar {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(236, 120, 120);
+    font-size: 15px;
+}
+
+#imprimir {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(226, 225, 134);
+    font-size: 15px;
+}
+
+.name,
+#nomecompleto {
+    font-size: 23px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>JavaScript Form</title>
+</head>
+
+<body>
+    <form id="nomes" action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" required>
+    </form>
+    <button id="juntar" onclick="juntarNome()">Enviar</button>
+    <button id="escrever" onclick="escreverNomeCompleto()">Escrever</button>
+    <button id="limpar" onclick="limparNome()">Limpar</button>
+    <button id="imprimir" onclick="window.print()">Imprimir</button>
+
+    <hr/>
+    <p class="name">Nome completo:</p>
+    <p id="nomecompleto">oi</p>
+
+    <script src="js/utilidade.js"></script>
+</body>
+
+</html>
