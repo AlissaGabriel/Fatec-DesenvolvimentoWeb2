@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Final de DW2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="media" action="#" method="POST">
+        <p class="lancamento">Lançamento de Notas</p>
+        <label for="av1">Avaliação 1:</label>
+        <input type="text" name="avaliacao1" id="av1" required>
+        <label for="av2">Avaliação 2:</label>
+        <input type="text" name="avaliacao2" id="av2" required>
+        <label for="p1">Projeto 1:</label>
+        <input type="text" name="projeto1" id="p1" required>
+        <label for="p2">Projeto 2:</label>
+        <input type="text" name="projeto2" id="p2" required>
+        <label for="participacao">Participação Diária:</label>
+        <input type="text" name="participacao" id="participacao" required>
+        <p class="lancamento">Lançamento de Faltas</p>
+        <label for="participacao">Qual o seu total de presença:</label>
+        <input type="text" name="pf" id="pf" required>
+    </form>
+
+    <div class="botao">
+        <button id="calcularMedia" onclick="calcular()">Calcular</button>
+        <button id="limpar" onclick="limpar()">Limpar</button>
+    </div>
+    
+    <hr />
+    <p>
+        <span>Média Final</span>
+        <span id="mediaf"></span>
+    </p>
+
+    <p>
+        <span>Resultado Final</span>
+        <span id="resultado"></span>
+    </p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+body{
+    font-family: monospace;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label{
+    padding: 20px;
+    font-size: 20px;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#calcularMedia{
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgb(116, 199, 116);
+    cursor: pointer;
+}
+
+#limpar{
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgb(223, 113, 113);
+    cursor: pointer;
+}
+
+span, #media, #resultado{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 11px;
+}
+
+span{
+    color: red;
+    animation: animacao 5s infinite;
+    font-weight: bold;
+}
+
+@keyframes animacao {
+    50%{
+        color: blue;
+    }
+}
+
+.lancamento{
+    font-size: 30px;
+    animation: cor 5s infinite;
+    color: #FF69B4;
+}
+
+@keyframes cor{
+    50%{
+        color: 	#BA55D3;
+    }
+}
